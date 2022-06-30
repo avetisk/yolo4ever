@@ -1,16 +1,17 @@
-import Link from "next/link";
+import { useState } from "react";
 
 const IndexPage = () => {
+  const [count, setCount] = useState(0);
+
+  const handleClick = () => {
+    setCount(count + 1);
+  };
+
   return (
-    <div>
-      <header>
-        <Link href="/contact-me">
-          <a>Contact me</a>
-        </Link>
-      </header>
-      <h1>I was born in a small town, near a river.</h1>
-      <p>There were flowers and forest around.</p>
-    </div>
+    <>
+      <header>{count}</header>
+      <button onClick={handleClick}>+1</button>
+    </>
   );
 };
 
