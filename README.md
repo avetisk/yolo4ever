@@ -13,3 +13,5 @@ const yolo = "Best way of life";
 ```
 
 ## Chapter 2: childhood
+
+i grown in a nice and cosy place
