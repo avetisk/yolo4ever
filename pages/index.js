@@ -1,16 +1,16 @@
 import { useState } from "react";
 
 const IndexPage = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(100);
 
   const handleClick = () => {
-    setCount(count + 3);
+    setCount(count + 4);
   };
 
   return (
     <>
       <header>{count}</header>
-      <button onClick={handleClick}>+3</button>
+      <button onClick={handleClick}>+4</button>
     </>
   );
 };
